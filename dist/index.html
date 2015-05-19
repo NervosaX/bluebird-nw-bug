@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+    <script src="https://jspm.io/system@0.16.js"></script>
+	</head>
+	<body>
+    <textarea id="console" style="width: 100%; height: 300px"></textarea>
+		<script type="text/javascript">
+      function log(text) {
+          textarea = document.getElementById("console");
+          textarea.innerHTML = text;
+      }
+
+      // Change this to 2.9.14 for it to work
+      System.import("npm:bluebird@2.9.15")
+        .then(function(Promise) {
+          Promise.all([])
+            .then(function() {
+              log("Loaded correctly");
+            });
+        })
+        .catch(function(e) {
+          log(e.stack || e);
+        });
+		</script>
+	</body>
+</html>

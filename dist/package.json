@@ -1,0 +1,7 @@
+{
+  "name": "demo",
+  "main": "index.html",
+  "window": {
+    "toolbar": true
+  }
+}
