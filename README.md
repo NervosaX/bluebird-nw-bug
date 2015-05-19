@@ -7,8 +7,7 @@ to 2.9.25 at the time of this repo.
 
 ## Requirements
 
-* The node webkit binary
-[https://github.com/nwjs/nw.js](Node webkit)
+* The node webkit binary https://github.com/nwjs/nw.js
 
 * This source code cloned somewhere
 
